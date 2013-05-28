@@ -27,7 +27,6 @@
   (fact "Checkables work also in let-bindings"
     (let [a (+ 1 1) => 2
           b (+ a 1) =not=> 2]
-      (/ 0 0) => (throws )
       (+ a b) => 5))
 
   (silent-fact "Checkables fail individually."
